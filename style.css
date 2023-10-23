@@ -1,64 +1,44 @@
-
-body, h1, h2, h3, p {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-
-header {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
-    font-family: 'Luminari', fantasy; /* Change the font to Luminari */
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: bold;
-}
-
 
 body {
-    background-color: #fff;
-    font-family: 'Luminari', fantasy; /* Change the font to Luminari */
-    color: #000;
-}
-
-
-main {
-    padding: 2rem;
+    background-color: white;
+    color: black;
+    font-family: 'Luminari', fantasy;
 }
 
 section {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    margin: 20px;
 }
 
-h2 {
-    font-size: 2rem;
-    color: #000;
-    font-family: 'Luminari', fantasy; /* Change the font to Luminari */
-}
-
-p {
-    font-size: 1.2rem;
-    color: #000;
-}
-
-/* Style the footer */
-footer {
+header {
     background-color: #000;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 10px;
+    height: 80px;
 }
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+main {
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 20px;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 20px;
+}
+
