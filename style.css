@@ -1,10 +1,10 @@
-/* Reset default margin and padding */
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
+
 header {
     background-color: #000;
     color: #fff;
@@ -25,14 +25,14 @@ nav a {
     font-weight: bold;
 }
 
-/* Add a subtle background */
+
 body {
     background-color: #fff;
     font-family: 'Luminari', fantasy; /* Change the font to Luminari */
     color: #000;
 }
 
-/* Style the main content sections */
+
 main {
     padding: 2rem;
 }
