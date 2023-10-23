@@ -6,10 +6,11 @@ body, h1, h2, h3, p {
 
 /* Style the header */
 header {
-    background-color: #222;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
+    font-family: 'Unique Font', sans-serif; /* Added unique font */
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
 }
 
 nav a {
-    color: #444;
+    color: #fff;
     text-decoration: none;
     margin: 0 1rem;
     font-weight: bold;
@@ -26,11 +27,11 @@ nav a {
 
 /* Add a subtle background */
 body {
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
+    background-color: #fff;
+    font-family: 'Unique Font', sans-serif;
 }
 
-/* Style the main content sections */
+
 main {
     padding: 2rem;
 }
@@ -38,24 +39,24 @@ main {
 section {
     margin: 2rem 0;
     padding: 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-top: 2px solid 
+    border-bottom: 2px solid #000; 
 }
 
 h2 {
     font-size: 2rem;
-    color: #333;
+    color: #000;
+    font-family: 'Unique Font', sans-serif;
 }
 
 p {
     font-size: 1.2rem;
-    color: #555;
+    color: #000;
 }
 
 /* Style the footer */
 footer {
-    background-color: #222;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 1.5rem 0;
