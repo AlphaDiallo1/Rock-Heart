@@ -1,4 +1,4 @@
-body, h1, h2, p, ul, ol {
+body, h1, h2, p, a {
     margin: 0;
     padding: 0;
 }
@@ -41,14 +41,6 @@ section {
 h2 {
     font-size: 1.5em;
     color: #00f;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
 }
 
 footer {
