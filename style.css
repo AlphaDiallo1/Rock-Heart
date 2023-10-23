@@ -10,7 +10,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 2rem 0;
-    font-family: 'Unique Font', sans-serif; /* Added unique font */
+    font-family: 'Luminari', fantasy; /* Change the font to Luminari */
 }
 
 h1 {
@@ -28,10 +28,11 @@ nav a {
 /* Add a subtle background */
 body {
     background-color: #fff;
-    font-family: 'Unique Font', sans-serif;
+    font-family: 'Luminari', fantasy; /* Change the font to Luminari */
+    color: #000;
 }
 
-
+/* Style the main content sections */
 main {
     padding: 2rem;
 }
@@ -39,14 +40,14 @@ main {
 section {
     margin: 2rem 0;
     padding: 1.5rem;
-    border-top: 2px solid 
-    border-bottom: 2px solid #000; 
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 h2 {
     font-size: 2rem;
     color: #000;
-    font-family: 'Unique Font', sans-serif;
+    font-family: 'Luminari', fantasy; /* Change the font to Luminari */
 }
 
 p {
