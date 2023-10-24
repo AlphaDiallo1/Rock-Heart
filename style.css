@@ -41,3 +41,8 @@ hr {
     border: 1px solid black;
     margin: 20px;
 }
+
+/* Change the font color of the contact section to black */
+footer ul {
+    color: black;
+}
