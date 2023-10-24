@@ -46,3 +46,8 @@ hr {
 footer ul {
     color: black;
 }
+
+/* Make the links in the contact section black */
+footer ul a {
+    color: black;
+}
