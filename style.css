@@ -1,45 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* style.css */
 
+/* Add global styles */
 body {
-    background-color: white;
-    color: black;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif;
+    /* Add other necessary global styles */
 }
 
-section {
-    margin: 20px;
-}
-
+/* Add specific styling for header */
 header {
-    background-color: #000;
+    background-color: #333;
     color: white;
-    text-align: center;
     padding: 10px;
-    height: 80px;
+    text-align: center;
 }
 
+/* Add specific styling for navigation links */
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     margin: 0 10px;
 }
 
+/* Add specific styling for main content */
 main {
-    text-align: center;
+    padding: 20px;
 }
 
-img {
-    max-width: 50%; 
-    height: auto;
-    display: block;
-    margin: 0 auto; 
+/* Add specific styling for footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
 
-hr {
-    border: 1px solid black;
-    margin: 20px;
+/* Add styling for links in the footer */
+.contact-link {
+    color: #ffcc00; /* Yellow color for links */
 }
+
+/* Add styling for navigation links in the main content */
+nav a.nav-link {
+    color: #0099cc; /* Blue color for navigation links */
+}
+
+/* Add styling for pseudo-classes */
+nav a.nav-link:hover,
+.contact-link:hover {
+    text-decoration: underline;
+    /* Add other styles for hover effect */
+}
+
+/* Add additional styling for article section */
+article {
+    margin-top: 20px;
+}
+
+/* Add font-size for better readability */
+body {
+    font-size: 16px;
+}
+
+/* Add comments for better readability and debugging */
+/* Comment: Global Styles */
+/* Comment: Header Styles */
+/* Comment: Navigation Styles */
+/* Comment: Main Content Styles */
+/* Comment: Footer Styles */
+/* Comment: Additional Styles for Links */
+/* Comment: Additional Styles for Hover Effect */
+/* Comment: Additional Styles for Article Section */
+/* Comment: Font Size */
