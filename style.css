@@ -1,72 +1,63 @@
 /* style.css */
 
-/* Add global styles */
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    /* Add other necessary global styles */
+    font-size: 16px;
+    background-color: #fff; /* White background for the page */
+    color: #000; /* Black font color */
 }
 
-/* Add specific styling for header */
+/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #87CEEB; /* Light blue banner for the header */
     color: white;
     padding: 10px;
     text-align: center;
 }
 
-/* Add specific styling for navigation links */
+/* Navigation Styles */
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
 }
 
-/* Add specific styling for main content */
+/* Main Content Styles */
 main {
     padding: 20px;
 }
 
-/* Add specific styling for footer */
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #87CEEB; /* Light blue banner for the footer */
     color: white;
     padding: 10px;
 }
 
-/* Add styling for links in the footer */
+/* Styling for Links in the Footer */
 .contact-link {
-    color: #ffcc00; /* Yellow color for links */
+    color: #000; /* Black color for links in the footer */
 }
 
-/* Add styling for navigation links in the main content */
+/* Styling for Navigation Links in the Main Content */
 nav a.nav-link {
-    color: #0099cc; /* Blue color for navigation links */
+    color: #fff; /* White color for navigation links */
 }
 
-/* Add styling for pseudo-classes */
+/* Additional Styling for Hover Effect */
 nav a.nav-link:hover,
 .contact-link:hover {
     text-decoration: underline;
     /* Add other styles for hover effect */
 }
 
-/* Add additional styling for article section */
+/* Additional Styling for Article Section */
 article {
     margin-top: 20px;
 }
 
-/* Add font-size for better readability */
-body {
-    font-size: 16px;
+/* Google Maps Section Styles */
+#google-maps {
+    margin-top: 20px;
 }
-
-/* Add comments for better readability and debugging */
-/* Comment: Global Styles */
-/* Comment: Header Styles */
-/* Comment: Navigation Styles */
-/* Comment: Main Content Styles */
-/* Comment: Footer Styles */
-/* Comment: Additional Styles for Links */
-/* Comment: Additional Styles for Hover Effect */
-/* Comment: Additional Styles for Article Section */
-/* Comment: Font Size */
