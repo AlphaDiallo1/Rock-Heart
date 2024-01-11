@@ -1,20 +1,24 @@
+/* STYLE.CSS */
+
+/* ------- General Styles ------- */
+
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
-	background-image:url(images/backgrounds/subtle_white_mini_waves.png);
-  color: #fff; 
+  font-family: 'Helvetica, Arial, sans-serif';
+  background-image: url(images/backgrounds/subtle_white_mini_waves.png);
+  color: #fff;
 }
 
 header {
-	height: 140px;
-	background-color: #000; 
-	background-image:url(images/backgrounds/subtle_brown_mini_waves.png);
+  height: 140px;
+  background-color: #403933;
+  background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
 }
 
 .logo {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 72px;
-  color: #fff; 
+  color: #c5c0b8;
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -22,53 +26,77 @@ header {
 }
 
 header h2 {
-	font-family: 'Montserrat', serif;
-	color: #e3e1dc;
-	margin: 0px;
-	font-size: 18px;
-	text-align: center;
+  font-family: 'Montserrat', serif;
+  color: #e3e1dc;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
 }
 
 footer {
-	background-color: #000;
-	background-image:url(images/backgrounds/subtle_brown_mini_waves.png);
+  background-color: #403933;
+  background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
+  color: #fff;
 }
 
 section {
-	padding: 0 25%;
+  padding: 0 25%;
   margin: 80px 0;
-  color: #403933; 
 }
 
-/* -------  Type ------- */
+/* ------- Type ------- */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat Alternates', sans-serif;
-	color: #000; 
+  color: #403933;
   text-align: center;
   font-weight: 500;
 }
 
-h1 { font-size: 28px; }
-h2 { font-size: 26px; }
-h3 { font-size: 18px; }
+h1 {
+  font-size: 28px;
+}
 
-p, li {
- font-family: 'Montserrat', sans-serif;
- line-height: 1.5em;
- margin-bottom: 0;
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p,
+li {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0;
 }
 
 a {
-	font-weight: 700;
-	text-decoration: none;	
+  font-weight: 700;
+  text-decoration: none;
 }
-a:link { color: #38786a; }
-a:visited { color: #38786a; }
-a:hover { color: #000;  }
-a:active { color: #000; }
+
+a:link {
+  color: #38786a;
+}
+
+a:visited {
+  color: #38786a;
+}
+
 a:hover {
-	text-decoration: underline;	
+  color: #403933;
+}
+
+a:active {
+  color: #403933;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 em {
@@ -77,24 +105,22 @@ em {
 }
 
 footer p {
-	color: #fff;	
-	text-align: center;
+  text-align: center;
   padding: 30px;
   margin: 0;
 }
 
-/* -------  Elements ------- */
 
-img, iframe { 
-  width: 100%;	
+
+img,
+iframe {
+  width: 100%;
   border-radius: 8px;
   border: 1px solid #c5c0b8;
-} 
+}
 
-/* -------  Modifier styles ------- */
 
 .border-top {
   padding-top: 80px;
   border-top: 2px solid #403933;
 }
-
