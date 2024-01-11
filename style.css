@@ -6,19 +6,19 @@ body {
   margin: 0;
   font-family: 'Helvetica, Arial, sans-serif';
   background-image: url(images/backgrounds/subtle_white_mini_waves.png);
-  color: #fff;
+  color: #000; /* Change font color to black */
 }
 
 header {
   height: 140px;
-  background-color: #403933;
+  background-color: #1e758f; /* Change header color to #1e758f */
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
 }
 
 .logo {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 72px;
-  color: #c5c0b8;
+  color: #fff; /* Change font color to white */
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -27,14 +27,14 @@ header {
 
 header h2 {
   font-family: 'Montserrat', serif;
-  color: #e3e1dc;
+  color: #fff; /* Change font color to white */
   margin: 0;
   font-size: 18px;
   text-align: center;
 }
 
 footer {
-  background-color: #403933;
+  background-color: #1e758f; /* Change footer background color to #1e758f */
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
   color: #fff;
 }
@@ -125,3 +125,4 @@ iframe {
   padding-top: 80px;
   border-top: 2px solid #403933;
 }
+
