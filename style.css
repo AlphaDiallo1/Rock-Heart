@@ -6,19 +6,19 @@ body {
   margin: 0;
   font-family: 'Helvetica, Arial, sans-serif';
   background-image: url(images/backgrounds/subtle_white_mini_waves.png);
-  color: #fff;
+  color: #000; 
 }
 
 header {
   height: 140px;
-  background-color: #403933;
+  background-color: #1e758f; /* Change header color to #1e758f */
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
 }
 
 .logo {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 72px;
-  color: #c5c0b8;
+  color: #fff; /* Change font color to white */
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -27,16 +27,16 @@ header {
 
 header h2 {
   font-family: 'Montserrat', serif;
-  color: #1e758f;
+  color: #fff; 
   margin: 0;
   font-size: 18px;
   text-align: center;
 }
 
 footer {
-  background-color: #403933;
+  background-color: #1e758f; /* Change footer background color to #1e758f */
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
-  color: #000;
+  color: #fff;
 }
 
 section {
@@ -77,6 +77,9 @@ li {
 a {
   font-weight: 700;
   text-decoration: none;
+}
+
+a:link {
   color: #38786a;
 }
 
@@ -84,9 +87,15 @@ a:visited {
   color: #38786a;
 }
 
-a:hover,
+a:hover {
+  color: #403933;
+}
+
 a:active {
   color: #403933;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
@@ -101,10 +110,19 @@ footer p {
   margin: 0;
 }
 
+/* ------- Elements ------- */
+
 img,
 iframe {
   width: 100%;
   border-radius: 8px;
   border: 1px solid #c5c0b8;
+}
+
+/* ------- Modifier styles ------- */
+
+.border-top {
+  padding-top: 80px;
+  border-top: 2px solid #403933;
 }
 
