@@ -125,3 +125,9 @@ iframe {
   padding-top: 80px;
   border-top: 2px solid #403933;
 }
+.center-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px
+}
+
