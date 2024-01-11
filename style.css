@@ -34,7 +34,7 @@ header h2 {
 }
 
 footer {
-  background-color: #000; /* Change background color to black */
+  background-color: #000; 
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
   color: #000; 
 }
