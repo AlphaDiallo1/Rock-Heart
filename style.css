@@ -11,13 +11,13 @@ body {
 
 header {
   height: 140px;
-  background-color: #1e758f; /* Change header color to #1e758f */
+  background-color: #1e758f;
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
 }
 
 header h2 {
   font-family: 'Montserrat', serif;
-  color: #000; /* Set font color to black */
+  color: #fff; 
   margin: 0;
   font-size: 18px;
   text-align: center;
