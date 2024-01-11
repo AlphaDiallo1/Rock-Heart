@@ -6,19 +6,19 @@ body {
   margin: 0;
   font-family: 'Helvetica, Arial, sans-serif';
   background-image: url(images/backgrounds/subtle_white_mini_waves.png);
-  color: #000; 
+  color: #fff;
 }
 
 header {
   height: 140px;
-  background-color: #1e758f; 
+  background-color: #403933;
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
 }
 
 .logo {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 72px;
-  color: #000; 
+  color: #c5c0b8;
   text-align: center;
   letter-spacing: -3;
   margin: 0;
@@ -27,18 +27,84 @@ header {
 
 header h2 {
   font-family: 'Montserrat', serif;
-  color: #000; 
+  color: #1e758f;
   margin: 0;
   font-size: 18px;
   text-align: center;
 }
 
 footer {
-  background-color: #000; 
+  background-color: #403933;
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
-  color: #000; 
+  color: #000;
 }
 
+section {
+  padding: 0 25%;
+  margin: 80px 0;
+}
 
+/* ------- Type ------- */
 
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #403933;
+  text-align: center;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p,
+li {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #38786a;
+}
+
+a:visited {
+  color: #38786a;
+}
+
+a:hover,
+a:active {
+  color: #403933;
+  text-decoration: underline;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+footer p {
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+img,
+iframe {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #c5c0b8;
+}
 
