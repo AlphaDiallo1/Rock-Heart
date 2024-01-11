@@ -6,24 +6,22 @@ body {
   margin: 0;
   font-family: 'Helvetica, Arial, sans-serif';
   background-image: url(images/backgrounds/subtle_white_mini_waves.png);
-  color: #000; 
+  color: #000; /* Set font color to black */
 }
 
 header {
   height: 140px;
-  background-color: #1e758f; 
+  background-color: #1e758f; /* Change header color to #1e758f */
   background-image: url(images/backgrounds/subtle_brown_mini_waves.png);
 }
 
 header h2 {
   font-family: 'Montserrat', serif;
-  color: #fff;
+  color: #000; /* Set font color to black */
   margin: 0;
   font-size: 18px;
   text-align: center;
 }
-
-/* ... (other styles remain unchanged) ... */
 
 /* ------- Modifier styles ------- */
 
@@ -31,6 +29,8 @@ header h2 {
   padding-top: 80px;
   border-top: 2px solid #403933;
 }
+
 .center-content {
   text-align: center;
 }
+
