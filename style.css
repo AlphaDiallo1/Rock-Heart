@@ -111,7 +111,8 @@ footer p {
 
 img,
 iframe {
-  width: 85%;
+  width: 50%; /* Reduced the width */
+  max-height: 300px; /* Added maximum height to make images smaller */
   border-radius: 8px;
   border: 1px solid #c5c0b8;
 }
@@ -128,3 +129,4 @@ iframe {
   margin: 0 auto;
   max-width: 800px;
 }
+
