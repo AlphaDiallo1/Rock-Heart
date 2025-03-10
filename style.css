@@ -10,28 +10,18 @@ body {
 
 /* Header with Starry Background */
 header {
-  height: 140px;
-  /* Use a gradient for the background */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("https://www.transparenttextures.com/patterns/subtle-dots.png"); /* Optional subtle pattern */
-  background-blend-mode: overlay; /* Make the gradient blend with the pattern */
-  position: relative; /* Needed for absolute positioning of stars */
-  overflow: hidden; /* Hide stars that go outside header bounds */
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("https://www.transparenttextures.com/patterns/subtle-dots.png");
+    background-blend-mode: overlay;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text within the header */
 }
 
-/* Starry Sky Animation */
-.star {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  opacity: 0.5;
-  animation: twinkle infinite linear;
-}
-
-/* Add more stars using JS */
 header::before {
     content: '';
     position: absolute;
@@ -53,36 +43,12 @@ header::before {
     }
 }
 
-/*header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/galaxy.png') repeat;
-    opacity: 0.4;
-    animation: animateGalaxy 40s linear infinite;
-}
-
-@keyframes animateGalaxy {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-500px);
-    }
-}*/
-
 .logo {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 72px;
   color: #fff;
-  text-align: center;
   letter-spacing: -3;
   margin: 0;
-  padding: 20px 0 0 0;
-  position: relative;
   z-index: 1; /* Ensure the logo is above the stars */
 }
 
@@ -91,8 +57,6 @@ header h2 {
   color: #fff;
   margin: 0;
   font-size: 18px;
-  text-align: center;
-  position: relative;
   z-index: 1; /* Ensure the heading is above the stars */
 }
 
@@ -105,8 +69,8 @@ footer {
 }
 
 section {
-  padding: 0 25%;
-  margin: 80px 0;
+    padding: 0 25%;
+    margin: 80px 0;
 }
 
 /* ------- Type ------- */
@@ -169,47 +133,67 @@ em {
 
 /* ------- Elements ------- */
 
-/* Profile Image - Fading Effect */
-.profile-image-container {
-  width: 250px; /* Adjust size as needed */
-  height: 250px; /* Make it square */
-  margin: 20px auto; /* Center the container */
-  overflow: hidden; /* Hide any overflow */
-  position: relative;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /*Add soft shadow*/
-  opacity: 1;  /* Start fully visible */
-  transition: opacity 0.5s ease; /* Smooth transition */
+/* Hero Section Styles (Based on the inspiration site) */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)); /* Optional subtle gradient */
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-/* Initial profile image display (e.g. square with rounded corners) */
-.profile-image {
+.hero-image {
+    position: relative; /* For overlay positioning */
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Circular image */
+    margin-right: 40px; /* Spacing between image and text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure image fills the container */
-  border-radius: 15px; /* Rounded corners */
-  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition */
 }
 
-/* Hide image on scroll down */
-/* Make the profile image fade out on scroll */
-body.scrolling-down .profile-image-container {
-  opacity: 0; /* Fade out */
+.hero-image:hover img {
+  transform: scale(1.1);
 }
 
-.profile-image-container:hover .profile-image {
-  transform: scale(1.1); /*Slight zoom on hover*/
+.hero-content {
+  flex: 1;
+  text-align: left;
 }
 
-/* Moving Frame Animation */
-@keyframes moveFrame {
-  0% { border-color: #94aee8; }
-  50% { border-color: #fff; }
-  100% { border-color: #94aee8; }
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
-.profile-image-container {
-    /* ... other styles ... */
-    animation: moveFrame 5s linear infinite;
+.hero-content p {
+  font-size: 18px;
+}
+
+/* Overlay Effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    opacity: 0; /* Hidden initially */
+    transition: opacity 0.3s ease;
+    border-radius: 50%; /* Maintain circle shape */
+}
+
+.hero-image:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
 }
 
 img,
@@ -244,8 +228,20 @@ iframe {
     margin: 40px 0;
   }
 
-  .profile-image-container {
+  .hero {
+    flex-direction: column; /* Stack on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-right: 0;
+    margin-bottom: 20px;
     width: 200px; /* Smaller image on smaller screens */
     height: 200px;
+  }
+
+  .hero-content {
+    text-align: center;
   }
 }
