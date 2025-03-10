@@ -3,17 +3,76 @@
 body {
   margin: 0;
   font-family: 'Helvetica, Arial, sans-serif';
-  /*background-color: #000;  Dark background */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2305051E'/%3E%3Cstop offset='100%25' stop-color='%231E1E48'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23gradient)'/%3E%3C/svg%3E"); /* A subtle gradient */
-  color: #ddd; /* Light text for contrast */
-  overflow-x: hidden; /*Prevent horizontal scroll*/
+  background-color: #000;
+  color: #ddd;
+  overflow-x: hidden;
 }
 
+/* Header with Starry Background */
 header {
   height: 140px;
-  background-color: rgba(30, 117, 143, 0.8); /* Slightly transparent header */
-  /*background-image: url(images/backgrounds/subtle_brown_mini_waves.png);*/
+  /* Use a gradient for the background */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("https://www.transparenttextures.com/patterns/subtle-dots.png"); /* Optional subtle pattern */
+  background-blend-mode: overlay; /* Make the gradient blend with the pattern */
+  position: relative; /* Needed for absolute positioning of stars */
+  overflow: hidden; /* Hide stars that go outside header bounds */
 }
+
+/* Starry Sky Animation */
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: twinkle infinite linear;
+}
+
+/* Add more stars using JS */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/stars.png') repeat;
+    opacity: 0.7;
+    animation: animateStars 20s linear infinite;
+}
+
+@keyframes animateStars {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+/*header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/galaxy.png') repeat;
+    opacity: 0.4;
+    animation: animateGalaxy 40s linear infinite;
+}
+
+@keyframes animateGalaxy {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-500px);
+    }
+}*/
 
 .logo {
   font-family: 'Nanum Pen Script', cursive;
@@ -23,6 +82,8 @@ header {
   letter-spacing: -3;
   margin: 0;
   padding: 20px 0 0 0;
+  position: relative;
+  z-index: 1; /* Ensure the logo is above the stars */
 }
 
 header h2 {
@@ -31,8 +92,11 @@ header h2 {
   margin: 0;
   font-size: 18px;
   text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure the heading is above the stars */
 }
 
+/* Footer stays the same */
 footer {
   background-color: rgba(30, 117, 143, 0.8); /* Slightly transparent footer */
   color: #fff;
@@ -51,7 +115,7 @@ h1,
 h2,
 h3 {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #f0f0f0; /* Light color for headings */
+  color: #f0f0f0;
   text-align: center;
   font-weight: 500;
 }
@@ -71,7 +135,7 @@ h3 {
 p,
 li {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6em; /* Increased line height for readability */
+  line-height: 1.6em;
   margin-bottom: 15px;
 }
 
@@ -105,22 +169,31 @@ em {
 
 /* ------- Elements ------- */
 
-/*Profile Image*/
+/* Profile Image - Fading Effect */
 .profile-image-container {
   width: 250px; /* Adjust size as needed */
   height: 250px; /* Make it square */
   margin: 20px auto; /* Center the container */
-  border-radius: 50%; /* Make it circular */
   overflow: hidden; /* Hide any overflow */
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /*Add soft shadow*/
+  opacity: 1;  /* Start fully visible */
+  transition: opacity 0.5s ease; /* Smooth transition */
 }
 
+/* Initial profile image display (e.g. square with rounded corners) */
 .profile-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure image fills the circle */
-  transition: transform 0.3s ease; /* Smooth transition */
+  object-fit: cover; /* Ensure image fills the container */
+  border-radius: 15px; /* Rounded corners */
+  display: block;
+}
+
+/* Hide image on scroll down */
+/* Make the profile image fade out on scroll */
+body.scrolling-down .profile-image-container {
+  opacity: 0; /* Fade out */
 }
 
 .profile-image-container:hover .profile-image {
