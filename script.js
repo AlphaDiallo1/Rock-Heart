@@ -1,7 +1,7 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
   let lastScrollTop = 0;
   const body = document.body;
+  const heroImage = document.querySelector('.hero-image'); // Select the .hero-image element
 
   window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
       body.classList.remove('scrolling-down');
     }
     lastScrollTop = scrollTop;
+
+    // Fading effect on hero image based on scroll position
+    const scrollPercentage = (scrollTop / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    const opacity = Math.max(1 - (scrollPercentage / 50), 0); // Start fading after 0% scroll, fully fade at 50%
+
+    heroImage.style.opacity = opacity;
   });
 
   // Add stars to the header
